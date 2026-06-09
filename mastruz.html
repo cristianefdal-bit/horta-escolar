@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mastruz – Horta Escolar</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Georgia,serif;background:#f5f9f0;min-height:100vh;display:flex;align-items:flex-start;justify-content:center;padding:24px 16px}
+  .card{background:#fff;border-radius:16px;border:2.5px solid #1a5c2a;overflow:hidden;width:100%;max-width:520px}
+  .card-header{background:#1a5c2a;color:#fff;padding:18px 20px 14px;position:relative}
+  .plant-name-pop{font-size:26px;font-weight:700;letter-spacing:.5px;text-transform:uppercase}
+  .plant-sci{font-size:13px;color:#a8d8a8;font-style:italic;margin-top:2px}
+  .badge-row{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+  .badge{background:#d4a017;color:#1a1a1a;border-radius:12px;padding:3px 10px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.3px}
+  .badge.fam{background:#2e8b3c;color:#fff}
+  .leaf-deco{position:absolute;right:16px;top:16px;font-size:36px;opacity:.22}
+  .card-body{padding:16px 20px}
+  .section{margin-bottom:14px;border-left:4px solid #1a5c2a;padding-left:12px}
+  .section-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:#1a5c2a;margin-bottom:6px}
+  .section.teal{border-left-color:#0f6e56}
+  .section.teal .section-title{color:#0f6e56}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .info-pill{background:#f0f7ec;border-radius:8px;padding:6px 10px;font-size:12px;color:#2c2c2a;border:1px solid #c0dd97}
+  .info-pill span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:#3b6d11;font-weight:600;margin-bottom:2px}
+  ul.bullets{list-style:none;padding:0}
+  ul.bullets li{font-size:13px;color:#2c2c2a;padding:3px 0 3px 14px;position:relative;line-height:1.5}
+  ul.bullets li::before{content:'▸';position:absolute;left:0;color:#1a5c2a;font-size:11px;top:4px}
+  .curiosidade{background:#faeeda;border-radius:10px;padding:10px 12px;font-size:12.5px;color:#633806;border-left:4px solid #d4a017}
+  .curiosidade-title{color:#854f0b;font-size:11px;text-transform:uppercase;letter-spacing:.5px;font-weight:700;display:block;margin-bottom:4px}
+  .fontes{font-size:11px;color:#5f5e5a;margin-top:12px;border-top:1px dashed #c0dd97;padding-top:8px}
+  .footer-bar{background:#1a5c2a;color:#a8d8a8;text-align:center;padding:8px 16px;font-size:11px;font-style:italic;letter-spacing:.3px}
+  .qr-hint{text-align:center;padding:8px;background:#f0f7ec;font-size:11px;color:#3b6d11}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="card-header">
+    <div class="leaf-deco" aria-hidden="true">🌿</div>
+    <div class="plant-name-pop">Mastruz</div>
+    <div class="plant-sci">Dysphania ambrosioides (L.) Mosyakin & Clemants</div>
+    <div class="badge-row"><span class="badge">Planta medicinal</span><span class="badge fam">Amaranthaceae</span><span class="badge fam">Dicotiledônea</span></div>
+  </div>
+  <div class="card-body">
+    <div class="section">
+      <div class="section-title">Necessidades de cultivo</div>
+      <div class="grid2"><div class="info-pill"><span>Água</span>Moderada</div><div class="info-pill"><span>Solo</span>Bem drenado</div><div class="info-pill"><span>Sol</span>Pleno</div></div>
+    </div>
+    <div class="section teal">
+      <div class="section-title">Importância ecológica e alimentar</div>
+      <ul class="bullets"><li>Utilizado na medicina popular brasileira</li></ul>
+    </div>
+    <div class="curiosidade"><span class="curiosidade-title">✦ Curiosidades</span><ul class="bullets"><li style="color:#633806">Também conhecido como erva-de-santa-maria</li></ul></div>
+    <div class="fontes">📚 <strong>Fontes:</strong> Ministério da Saúde; EMBRAPA Recursos Genéticos e Biotecnologia</div>
+  </div>
+  <div class="qr-hint">CETI – Profª Júlia Nunes Alves</div>
+  <div class="footer-bar">Projeto Conexão Sustentável · Horta Escolar Interativa</div>
+</div>
+</body>
+</html>
