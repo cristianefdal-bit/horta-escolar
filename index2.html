@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horta Escolar – Fichas das Plantas</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; background: #f5f9f0; min-height: 100vh; }
+
+    .header {
+      background: #1a5c2a;
+      color: #fff;
+      padding: 28px 20px 20px;
+      text-align: center;
+    }
+    .header h1 { font-size: 22px; font-weight: 700; letter-spacing: 0.5px; }
+    .header p { font-size: 13px; color: #a8d8a8; margin-top: 6px; font-style: italic; }
+
+    .container { max-width: 520px; margin: 0 auto; padding: 20px 16px 40px; }
+
+    .btn-todas {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #d4a017;
+      color: #1a1a1a;
+      border-radius: 12px;
+      padding: 13px 20px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      margin-bottom: 20px;
+      transition: background 0.15s;
+    }
+    .btn-todas:hover { background: #b8880f; }
+    .btn-todas:focus-visible { outline: 3px solid #1a5c2a; outline-offset: 2px; }
+
+    .subtitle {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #3b6d11;
+      margin-bottom: 12px;
+    }
+
+    .plant-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+
+    .plant-list li a {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: #fff;
+      border: 2px solid #1a5c2a;
+      border-radius: 12px;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.15s;
+    }
+    .plant-list li a:hover { background: #f0f7ec; border-color: #0f3d1b; transform: translateX(4px); }
+    .plant-list li a:focus-visible { outline: 3px solid #d4a017; outline-offset: 2px; }
+
+    .plant-icon { font-size: 26px; flex-shrink: 0; }
+    .plant-info { flex: 1; min-width: 0; }
+    .plant-nome { font-size: 15px; font-weight: 700; color: #1a5c2a; }
+    .plant-sci { font-size: 11px; color: #5f5e5a; font-style: italic; margin-top: 2px; }
+    .plant-tipo { font-size: 11px; color: #8a6500; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; margin-top: 3px; }
+    .arrow { color: #1a5c2a; font-size: 16px; flex-shrink: 0; }
+
+    .footer {
+      background: #1a5c2a;
+      color: #a8d8a8;
+      text-align: center;
+      padding: 12px;
+      font-size: 11px;
+      font-style: italic;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🌱 Horta Escolar</h1>
+    <p>Projeto Conexão Sustentável · CETI – Profª Júlia Nunes Alves</p>
+  </div>
+
+  <div class="container">
+
+    <a href="todas-as-plantas.html" class="btn-todas">
+      🌿 Ver todas as plantas em uma página
+    </a>
+
+    <div class="subtitle">Ou escolha uma planta</div>
+    <ul class="plant-list">
+      <li><a href="acafrao.html"><span class="plant-icon">🟡</span><div class="plant-info"><div class="plant-nome">Açafrão</div><div class="plant-sci">Curcuma longa L.</div><div class="plant-tipo">Rizoma</div></div><span class="arrow">›</span></a></li>
+      <li><a href="acerola.html"><span class="plant-icon">🍒</span><div class="plant-info"><div class="plant-nome">Acerola</div><div class="plant-sci">Malpighia emarginata DC.</div><div class="plant-tipo">Fruto</div></div><span class="arrow">›</span></a></li>
+      <li><a href="beterraba.html"><span class="plant-icon">🟣</span><div class="plant-info"><div class="plant-nome">Beterraba</div><div class="plant-sci">Beta vulgaris L.</div><div class="plant-tipo">Raiz tuberosa</div></div><span class="arrow">›</span></a></li>
+      <li><a href="boldo.html"><span class="plant-icon">🍃</span><div class="plant-info"><div class="plant-nome">Boldo</div><div class="plant-sci">Plectranthus barbatus Andrews</div><div class="plant-tipo">Planta medicinal</div></div><span class="arrow">›</span></a></li>
+      <li><a href="cebolinha.html"><span class="plant-icon">🌿</span><div class="plant-info"><div class="plant-nome">Cebolinha</div><div class="plant-sci">Allium fistulosum L.</div><div class="plant-tipo">Hortaliça folhosa</div></div><span class="arrow">›</span></a></li>
+      <li><a href="coentro.html"><span class="plant-icon">🌱</span><div class="plant-info"><div class="plant-nome">Coentro</div><div class="plant-sci">Coriandrum sativum L.</div><div class="plant-tipo">Hortaliça folhosa e condimentar</div></div><span class="arrow">›</span></a></li>
+      <li><a href="erva-cidreira.html"><span class="plant-icon">🌿</span><div class="plant-info"><div class="plant-nome">Erva-cidreira</div><div class="plant-sci">Melissa officinalis L.</div><div class="plant-tipo">Planta medicinal e aromática</div></div><span class="arrow">›</span></a></li>
+      <li><a href="limao.html"><span class="plant-icon">🍋</span><div class="plant-info"><div class="plant-nome">Limão</div><div class="plant-sci">Citrus limon (L.) Osbeck</div><div class="plant-tipo">Fruto cítrico</div></div><span class="arrow">›</span></a></li>
+      <li><a href="malva-do-reino.html"><span class="plant-icon">🍃</span><div class="plant-info"><div class="plant-nome">Malva-do-reino</div><div class="plant-sci">Plectranthus amboinicus (Lour.) Spreng.</div><div class="plant-tipo">Planta medicinal e aromática</div></div><span class="arrow">›</span></a></li>
+      <li><a href="mastruz.html"><span class="plant-icon">🌿</span><div class="plant-info"><div class="plant-nome">Mastruz</div><div class="plant-sci">Dysphania ambrosioides (L.)</div><div class="plant-tipo">Planta medicinal</div></div><span class="arrow">›</span></a></li>
+      <li><a href="pimentao.html"><span class="plant-icon">🫑</span><div class="plant-info"><div class="plant-nome">Pimentão</div><div class="plant-sci">Capsicum annuum L.</div><div class="plant-tipo">Fruto</div></div><span class="arrow">›</span></a></li>
+      <li><a href="pimentinha.html"><span class="plant-icon">🌶️</span><div class="plant-info"><div class="plant-nome">Pimentinha</div><div class="plant-sci">Capsicum frutescens L.</div><div class="plant-tipo">Fruto condimentar</div></div><span class="arrow">›</span></a></li>
+      <li><a href="tomate.html"><span class="plant-icon">🍅</span><div class="plant-info"><div class="plant-nome">Tomate</div><div class="plant-sci">Solanum lycopersicum L.</div><div class="plant-tipo">Fruto</div></div><span class="arrow">›</span></a></li>
+    </ul>
+  </div>
+
+  <div class="footer">Projeto Conexão Sustentável · Horta Escolar Interativa</div>
+
+</body>
+</html>
